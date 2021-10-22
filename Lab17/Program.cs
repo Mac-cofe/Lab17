@@ -17,17 +17,19 @@ namespace Lab17
             check1.Output();
             Console.WriteLine();
 
-            Check<string> check2 = new Check<string>();
-            check2.Number = "GR-1100";
-            check2.Name = "Сидоров Сергей Петрович";
-            check2.Balance = 12345;
+            Check<string> check2 = new Check<string>
+            {
+                Number = "GR-1100",
+                Name = "Сидоров Сергей Петрович",
+                Balance = 12345
+            };
             check2.Output();
             Console.WriteLine();
 
             Check<float> check3 = new Check<float>();
             check3.Number = 100.54f;
             check3.Name = "Николаев Петр Викторович";
-            check3.Balance = 12345;
+            check3.Balance = 99999;
             check3.Output();
             Console.WriteLine();
 
@@ -56,7 +58,6 @@ namespace Lab17
             //    Console.WriteLine("Введите баланс");
             //    Balance = Convert.ToDouble(Console.ReadLine());
             //}
-
 
             public void InputFioBalance()
             {
